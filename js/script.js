@@ -6,6 +6,8 @@ $(function () {
 
   // Navbar gains a border/shadow once the page scrolls
   var $nav = $("#mainNav");
+  var $navHeight = $nav.outerHeight();
+
   function updateNavState() {
     if ($(window).scrollTop() > 40) {
       $nav.addClass("is-scrolled");
@@ -21,7 +23,7 @@ $(function () {
     var target = $(this.getAttribute("href"));
     if (target.length) {
       e.preventDefault();
-      var offset = target.offset().top - ($nav.outerHeight() || 0) + 1;
+      var offset = target.offset().top - ($navHeight || 0) + 1;
       $("html, body").animate({ scrollTop: offset }, 500);
 
       // Close the mobile menu after choosing a link
