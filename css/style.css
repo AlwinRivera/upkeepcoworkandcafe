@@ -165,7 +165,7 @@ a:hover {
   height: auto;
 }
 .navbar-upkeep .nav-link {
-  color: var(--ink);
+  color: var(--ink) !important;
   font-weight: 500;
   font-size: 0.92rem;
   margin: 0 0.7rem;
@@ -173,7 +173,7 @@ a:hover {
 }
 .navbar-upkeep .nav-link.active,
 .navbar-upkeep .nav-link:hover {
-  color: var(--gold-deep);
+  color: var(--gold-deep) !important;
 }
 .navbar-upkeep .nav-link.active::after {
   content: "";
